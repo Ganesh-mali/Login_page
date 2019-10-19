@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif ;
+      background-color:pink ;text-align:center; margin: 200px 20px;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+ .logincontent
+        {
+            position: fixed;
+            width: 500px;
+            height: 300px;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -270px;
+            margin-right: -300px;
+            background: red;
+            padding: 5px 5px;
+        }
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 12px 50px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.container {
+   margin:80px;
+  padding: 0px;
+}
+span1.psw {
+  float:left;
+  padding: 200px 100px 1px 0px;
+  
+}
+
+span.psw {
+  float: right;
+  padding: 200px 4px 4px 4px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome back</h2>
+
+<div class="logincontent">
+  <div class="container">
+    
+    <input type="text" placeholder="Email address" name="uname" required>
+
+    <input type="password" placeholder=" Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+   
+  </div>
+</div>
+  <div class="container" style="background-color:#f1f1f1">
+    <span1  class="psw">Forgot Your Password ?</span1>
+    <span class="psw">Don,t have an account  ? </span>
+  </div>
+
+
+
+</body>
+</html>
