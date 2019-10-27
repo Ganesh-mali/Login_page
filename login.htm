@@ -4,10 +4,14 @@
 <title> Welcome back ! </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif ;
-      background-color:DodgerBlue ;text-align:center; margin: 200px 20px;}
+body{
+font-family: Arial, Helvetica, sans-serif ;
+      background-color:DodgerBlue ;text-align:center;   
+}
 
-
+.top {font-family: Arial, Helvetica, sans-serif ;
+      color:white ;text-align:center; margin: 150px 100px 80px
+;}
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -29,7 +33,6 @@ input[type=text], input[type=password] {
             background: white;
             padding: 5px 5px;
         }
-
 button {
   background-color: blue;
   color: white;
@@ -39,43 +42,37 @@ button {
   cursor: pointer;
   width: 100%;
 }
-
 button:hover {
   opacity: 0.8;
 }
-
-
-
-
 .container {
-   margin:80px;
+   margin:80px ;
   padding: 0px;
 }
-span1.psw {
+span.psw1 {
   float:left;
-  padding: 200px 100px 1px 0px;
+  
+  margin:200px 150px 50px 280px;
+}
+span.psw {
+  float:right;
+  margin:10px 280px 50px 150px;
   
 }
-
-span.psw {
-  float: right;
-  padding: 200px 4px 4px 4px;
-}
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
+  /*span.psw {
      display: block;
      float: none;
-  }
+  }*/
   
 }
 </style>
 </head>
 <body>
-
-<h1>Welcome back</h1> 
-
+<div class="top">
+<h1>Welcome back!</h1> 
+</div>
 <br>
 
 <div class="logincontent">
@@ -90,8 +87,8 @@ span.psw {
   </div>
 </div>
   <div class="container" style="background-color:#f1f1f1">
-    <span1  class="psw">Forgot Your Password ?</span1>
-    <span class="psw">Don,t have an account  ? </span>
+    <span  class="psw1">Forgot Your Password ?</span>
+    <span class="psw">Don't have an account get started  ?</span>
   </div>
 
 
